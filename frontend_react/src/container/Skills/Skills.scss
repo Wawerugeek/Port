@@ -1,0 +1,19 @@
+.app__skills {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.app__skills-container {
+    width: 80%;
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: row;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
