@@ -75,7 +75,8 @@
     }
 
     @media screen and (max-width: 900px) {
-        display: none;
+            display: none;
+        
     }
 }
 
@@ -107,7 +108,7 @@
 
         width: 80%;
 
-        height: 100vh;
+        height: 60vh;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
