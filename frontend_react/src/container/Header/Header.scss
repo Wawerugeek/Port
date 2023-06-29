@@ -124,39 +124,68 @@
     // make the circles to have different heights and widths
 
     div:nth-child(1) {
-        width: 100px;
-        height: 100px;
+        margin: 0.5rem;
+        width: 80px;
+        height: 80px;
 
     }
     div:nth-child(2) {
         margin: 1.75rem;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         
     }
     div:nth-child(3) {
-        width: 70px;
-        height: 70px;
+        margin: 2rem;
+        width: 120px;
+        height: 120px;
+        
+    }
+    div:nth-child(4) {
+        margin: 1.75rem;
+        width: 100px;
+        height: 10px;
+        
+    }
+    div:nth-child(5) {
+        width: 80px;
+        height: 80px;
         
     }
 
     @media screen and (min-width: 2000px) {
-        div:nth-child(2) {
-            width: 400px;
-            height: 400px;
-    
-        }
-        div:nth-child(3) {
-            width: 170px;
-            height: 170px;
-            
-        }
+      
         div:nth-child(1) {
-            width: 200px;
-            height: 200px;
-            
+          width: 400px;
+          height: 400px;
+          transform: translate(-50%, -50%) rotate(0deg);
         }
-    }
+      
+        div:nth-child(2) {
+          width: 170px;
+          height: 170px;
+          transform: translate(-50%, -50%) rotate(72deg);
+        }
+      
+        div:nth-child(3) {
+          width: 200px;
+          height: 200px;
+          transform: translate(-50%, -50%) rotate(144deg);
+        }
+      
+        div:nth-child(4) {
+          width: 200px;
+          height: 200px;
+          transform: translate(-50%, -50%) rotate(216deg);
+        }
+      
+        div:nth-child(5) {
+          width: 200px;
+          height: 200px;
+          transform: translate(-50%, -50%) rotate(288deg);
+        }
+      }
+      
     @media screen and (max-width: 1200px) {
         width: 100%;
         flex-direction: row;
@@ -182,7 +211,14 @@
         width: 100%;
         object-fit: contain;
         z-index: 1;
+        margin-bottom: 3rem;
+
     }
+    @media (min-width: 768px) {
+        img {
+          border-radius: 50% 50% 10% 0;
+        }
+      }
 
     .overlay_circle {
         position: absolute;
