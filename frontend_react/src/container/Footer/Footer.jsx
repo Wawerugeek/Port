@@ -59,7 +59,7 @@ const Footer = () => {
           <input className='p-text' type="text" placeholder='Your Name' name="username" value = { username } onChange={handleChangeInput} />
         </div>
         <div className="app__flex">
-          <input className='p-text' type="text" placeholder='Your email' name="Email" value = { email } onChange={handleChangeInput} />
+          <input className='p-text' type="text" placeholder='Your email' name="email" value = { email } onChange={handleChangeInput} />
         </div>
         <div>
           <textarea 
